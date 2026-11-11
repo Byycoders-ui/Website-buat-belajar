@@ -38,6 +38,15 @@ header {
     color: #164e63;
 }
 
+background:
+    linear-gradient(
+        90deg,
+        rgba(0, 20, 35, 0.75),
+        rgba(0, 20, 35, 0.15)
+    ),
+    url("images/foto-beranda-utama.jpg");
+)
+
 .logo span {
     color: #20a4c5;
 }
