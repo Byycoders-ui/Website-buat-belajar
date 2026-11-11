@@ -1,4 +1,7 @@
-/* RESET */
+/* =========================
+   RESET & GLOBAL
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +15,11 @@ body {
     color: #1c3540;
 }
 
-/* NAVBAR */
+
+/* =========================
+   NAVBAR
+========================= */
+
 header {
     width: 100%;
     position: fixed;
@@ -26,6 +33,7 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 20px 30px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,15 +45,6 @@ header {
     font-weight: bold;
     color: #164e63;
 }
-
-background:
-    linear-gradient(
-        90deg,
-        rgba(0, 20, 35, 0.75),
-        rgba(0, 20, 35, 0.15)
-    ),
-    url("foto-beranda-utama.jpg");
-)
 
 .logo span {
     color: #20a4c5;
@@ -76,20 +75,34 @@ background:
     cursor: pointer;
 }
 
-/* HOME */
+
+/* =========================
+   HERO / HOME
+========================= */
+
 .hero {
     min-height: 100vh;
+
     display: flex;
     align-items: center;
+
     padding: 120px 10%;
+
     color: white;
+
+    /* BACKGROUND FOTO PENYU */
 
     background:
         linear-gradient(
-            rgba(0, 35, 55, 0.5),
-            rgba(0, 35, 55, 0.5)
+            90deg,
+            rgba(0, 20, 35, 0.75),
+            rgba(0, 20, 35, 0.15)
         ),
-        linear-gradient(135deg, #167b9b, #063b59);
+        url("images/foto-beranda-utama.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -114,13 +127,22 @@ background:
     margin-bottom: 30px;
 }
 
+
+/* =========================
+   BUTTON
+========================= */
+
 .btn {
     display: inline-block;
+
     padding: 14px 30px;
+
     background: white;
     color: #164e63;
+
     border-radius: 30px;
     text-decoration: none;
+
     transition: 0.3s;
 }
 
@@ -130,7 +152,11 @@ background:
     transform: translateY(-3px);
 }
 
-/* SECTION */
+
+/* =========================
+   SECTION
+========================= */
+
 .section {
     min-height: 65vh;
     padding: 120px 10%;
@@ -147,7 +173,11 @@ background:
     line-height: 1.8;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     padding: 25px;
     text-align: center;
@@ -155,8 +185,16 @@ footer {
     color: white;
 }
 
-/* RESPONSIVE */
+
+/* =========================
+   RESPONSIVE / MOBILE
+========================= */
+
 @media (max-width: 768px) {
+
+    .navbar {
+        padding: 18px 20px;
+    }
 
     .menu-toggle {
         display: block;
@@ -164,14 +202,19 @@ footer {
 
     .nav-menu {
         display: none;
+
         position: absolute;
         top: 70px;
         right: 20px;
+
         flex-direction: column;
         gap: 20px;
+
         background: white;
         padding: 25px;
+
         border-radius: 12px;
+
         box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     }
 
@@ -181,6 +224,7 @@ footer {
 
     .hero {
         padding: 120px 8%;
+        background-position: center;
     }
 
     .section {
