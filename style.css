@@ -98,7 +98,7 @@ header {
             rgba(0, 20, 35, 0.75),
             rgba(0, 20, 35, 0.15)
         ),
-        url("images/foto-beranda-utama.jpg");
+        url("foto-beranda-utama.jpg");
 
     background-size: cover;
     background-position: center;
