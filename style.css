@@ -11,7 +11,6 @@ body {
     color: #1c3540;
 }
 
-
 header {
     width: 100%;
     position: fixed;
@@ -67,8 +66,6 @@ header {
     cursor: pointer;
 }
 
-
-
 .hero {
     min-height: 100vh;
     display: flex;
@@ -110,7 +107,6 @@ header {
     margin-bottom: 30px;
 }
 
-
 .btn {
     display: inline-block;
 
@@ -130,7 +126,6 @@ header {
     color: white;
     transform: translateY(-3px);
 }
-
 
 .section {
     min-height: 65vh;
@@ -154,7 +149,6 @@ footer {
     background: #063b59;
     color: white;
 }
-
 
 @media (max-width: 768px) {
 
