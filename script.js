@@ -16,7 +16,6 @@ menuToggle.addEventListener("click", function () {
     menuToggle.textContent = isOpen ? "✕" : "☰";
 });
 
-// Menutup menu setelah salah satu link diklik
 document.querySelectorAll(".nav-menu a").forEach(function(link) {
 
     link.addEventListener("click", function() {
